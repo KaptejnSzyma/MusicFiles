@@ -10,7 +10,8 @@ def find_music(start, extension):
             yield os.path.join(absolute_path, file)          # use it in yielded values
 
 
-my_music_files = find_music('music', 'emp3')
+# my_music_files = find_music('music', 'emp3')
+my_music_files = find_music('D:\\Muzyka\\Ween\\2007.06 - The Friends EP', 'mp3')
 error_list = []
 
 for f in my_music_files:
