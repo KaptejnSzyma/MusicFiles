@@ -11,6 +11,12 @@ def find_albums(root, artist_name):
                     yield os.path.join(album_path, album), album
 
 
+def find_songs(albums):
+    for album in albums:
+        for song in os.listdir(album[0]):  # we want the path, not the name of the album
+            yield song
+
+
 album_list = find_albums("music", "Aerosmith")
 
 for a in album_list:
