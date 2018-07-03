@@ -18,6 +18,7 @@ def find_songs(albums):
 
 
 album_list = find_albums("music", "Aerosmith")
+song_list = find_songs(album_list)
 
-for a in album_list:
-    print(a)
+for s in song_list:
+    print(s)
