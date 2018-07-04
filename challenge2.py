@@ -10,7 +10,7 @@
  
 inch_measurement = (3, 8, 20)
  
-cm_measurement = [x * 2.54 for x in inch_measurement]
-print(tuple(cm_measurement))
+cm_measurement = tuple([x * 2.54 for x in inch_measurement])
+print(cm_measurement)
  
 # Once you've got the correct values, change the code to produce a tuple, rather than a list.
